@@ -1,0 +1,8 @@
+PHASE 17 HANDOFF -- Internal reviewer pass
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+Checklist-style pass over methods/claims; conservative claim wording enforced (statistically reconstructable under specified scenarios).
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.

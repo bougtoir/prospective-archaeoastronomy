@@ -1,0 +1,36 @@
+FINAL_USER_FIELDS_REQUIRED.txt
+================================
+Author metadata has been resolved from repository records (same
+identity used in prior manuscripts in bougtoir/wip):
+
+  Tatsuki Onishi (corresponding author)
+  Data Science and AI Innovation Research Promotion Center,
+  Shiga University, 1-1-1 Bamba, Hikone, Shiga 522-8522, Japan
+  E-mail: bougtoir@gmail.com
+  ORCID: 0000-0001-7261-9062
+
+These values are now written directly into the manuscript title block,
+cover letter, and declarations. No scattered placeholders remain.
+
+Remaining genuinely unresolved items (OPTIONAL — none block submission):
+
+1. Suggested reviewers
+   Acta Astronautica allows optional suggested reviewers.
+   ACTION (optional): supply names/affiliations/emails in the Editorial
+   Manager form at submission time. No placeholder remains in the
+   manuscript; simply add them in the submission system if desired.
+
+2. Archival DOI (optional)
+   No Zenodo/DOI archive exists. The public repository
+   https://github.com/bougtoir/prospective-archaeoastronomy is cited as
+   the code/data source of record.
+   ACTION (optional): mint a DOI via Zenodo-GitHub integration and add it
+   to the data-availability statements in main.md/declarations.md.
+
+3. Funding / competing interests / CRediT confirmation
+   Sensible single-author defaults are written (no grant, no competing
+   interests, all CRediT roles to Tatsuki Onishi).
+   ACTION: confirm at submission time; edit manuscript/declarations.md
+   if the defaults are inaccurate.
+
+Everything else in the package is machine-generated and verified.

@@ -1,0 +1,8 @@
+PHASE 12 HANDOFF -- Catalogue integration
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+ICRF3 K-band (824 quasars, IERS Data Center), ATNF pulsars (2818), Gaia DR3 bright stars (200) fetched to data/raw with acquisition_ledger.csv (URL, UTC, bytes, sha256). ICRF3/K replaced failed hpiers URL.
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.

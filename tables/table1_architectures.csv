@@ -1,0 +1,21 @@
+architecture,description,n_star,n_pulsar,n_quasar,n_galaxy,n_total
+M1_single_star,single stellar landmark,1,0,0,0,1
+M2_star_triangle,stellar triangle,3,0,0,0,3
+M3_stars_10,"stellar network, n=10",10,0,0,0,10
+M3_stars_20,"stellar network, n=20",20,0,0,0,20
+M3_stars_50,"stellar network, n=50",50,0,0,0,50
+M3_stars_100,"stellar network, n=100",100,0,0,0,100
+M4_pulsars_10,"pulsar network, n=10",0,10,0,0,10
+M4_pulsars_20,"pulsar network, n=20",0,20,0,0,20
+M4_pulsars_50,"pulsar network, n=50",0,50,0,0,50
+M5_quasars_10,"quasar (ICRF-like) network, n=10",0,0,10,0,10
+M5_quasars_20,"quasar (ICRF-like) network, n=20",0,0,20,0,20
+M5_quasars_50,"quasar (ICRF-like) network, n=50",0,0,50,0,50
+M5_quasars_100,"quasar (ICRF-like) network, n=100",0,0,100,0,100
+M6_galaxies_10,"galaxy/cluster network, n=10",0,0,0,10,10
+M6_galaxies_20,"galaxy/cluster network, n=20",0,0,0,20,20
+M6_galaxies_50,"galaxy/cluster network, n=50",0,0,0,50,50
+M7_hybrid_pq,hybrid: 10 pulsars + 10 quasars,0,10,10,0,20
+M7_hybrid_spq,hybrid: 10 stars + 10 pulsars + 10 quasars,10,10,10,0,30
+M7_hybrid_all,hybrid: 5 stars + 5 pulsars + 10 quasars + 10 galaxies,5,5,10,10,30
+M1b_direct_axis_landmark,direct-axis landmark control (direction defines axis; benchmark only),1,0,0,0,1

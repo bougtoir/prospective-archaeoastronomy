@@ -1,0 +1,8 @@
+PHASE 07 HANDOFF -- Architectures M1-M7
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+Defined ARCHITECTURES dict in src/proarch/architectures.py: M1_single_star, M2_star_triad, M3_star_set{10,20,50,100}, M4_pulsar{10,20,50}, M5_quasar{10,20,50,100}, M6_galaxy{10,20,50}, M7_hybrid{pq,spq,all}. build_population supports optional D-optimal oversample x3.
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.

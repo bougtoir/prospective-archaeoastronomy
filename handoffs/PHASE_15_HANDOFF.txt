@@ -1,0 +1,8 @@
+PHASE 15 HANDOFF -- Manuscript draft
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+main.md: abstract+6 keywords, intro with H1-H6, methods 2.1-2.7, results 3.1-3.10, discussion 4.1-4.4, conclusions, declarations. All numbers {{placeholder}}-driven from values.json.
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.
