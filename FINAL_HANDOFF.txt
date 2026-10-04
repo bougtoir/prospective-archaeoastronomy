@@ -1,0 +1,133 @@
+FINAL HANDOFF -- prospective-archaeoastronomy
+==============================================
+Project: "Deep-Time Celestial Reference Networks for Reconstructing
+Terrestrial Orientation" (secondary term: prospective archaeoastronomy)
+Target journal: Acta Astronautica (Elsevier)
+Date: 2026-09-25 UTC (final targeted revision + final minor cleanup)
+
+FINAL CLEANUP STATUS (enumerated per cleanup brief)
+-------------------------------------------------
+1. Final commit/hash: see git log of the cleanup branch (this file's
+   content is committed there; exact hash in the PR).
+2. #497 fixes retained: quantized stored cosines/edges + stored-edge
+   misidentification checks unchanged in src/proarch/{simulation,
+   encoding,reconstruction}.py.
+3. M1b retained: direct_axis flag in simulation.run_replication; E11
+   grid; Table 1 row; two unit tests.
+4. M1b wording (Methods/§3.1/§4.1/Conclusion): M1b "intentionally
+   stores only the landmark direction and no independent sign/chirality
+   bit; its ~0.5 ceiling reflects the benchmark definition, not a
+   fundamental impossibility of all direct-axis schemes. An augmented
+   direct-axis scheme with an external sign/chirality marker could
+   remove this specific ambiguity, but would still retain
+   single-source fragility to loss, drift, and misidentification.
+   Algebraic identifiability alone is not the limiting issue;
+   single-point fault tolerance is."
+5. M1b numerical results changed: NO — code unchanged; text-only.
+6. Headline numerical results changed: NO. ("No headline numerical
+   results changed in this final cleanup.")
+7. H2 remains NOT supported under baseline assumptions (quasar-50
+   1.0/0.043 vs hybrid 0.9711/0.0138; E7 best alloc = quasar 20).
+8. Malformed Gaia references repaired: renderer now parses braces
+   correctly and converts BibTeX accents -> clean Unicode
+   ("Hernandez" renders as "Hernández"; refs [3],[4] verified:
+   Mignard et al. 2018, A&A, doi 10.1051/0004-6361/201832916;
+   Lindegren et al. 2018, A&A, doi 10.1051/0004-6361/201832727).
+9. All references re-audited: 18 entries, brace-aware field parsing,
+   book entries now emit publisher; no malformed/duplicate/incomplete
+   data; every in-text citation maps to exactly one bibliography entry.
+10. Author/affiliation/contact status: RESOLVED from repository records
+    (Shiga University, Data Science and AI Innovation Research
+    Promotion Center; bougtoir@gmail.com; ORCID 0000-0001-7261-9062) —
+    written into title block, cover letter, declarations.
+11. Unresolved user-only metadata: only OPTIONAL items in
+    FINAL_USER_FIELDS_REQUIRED.txt (suggested reviewers, optional DOI,
+    declaration confirmations). No scattered placeholders.
+12. Public repository URL: https://github.com/bougtoir/prospective-
+    archaeoastronomy (verified live, final implementation synced).
+13. Clean-build/test status: pytest 14/14 PASS; build_manuscript,
+    build_docx_inline, make_submission_package, qc_audit -> PASS
+    0 issues. No full Monte Carlo rerun required (text-only fixes;
+    simulation code untouched except earlier committed M1b flag).
+14. Final submission file list: see "WHAT EXISTS" and
+    submission_package/ + ACTA_submission_package.zip (20 files).
+
+WHAT EXISTS
+-----------
+- Full simulation pipeline: architectures M1-M7 plus the M1b direct-axis
+  landmark benchmark (direct_axis flag), 13 experiment programs
+  (E1-E10 + E6b mismatch-model edge benefit + E6c storage-precision
+  floor + E11 M1b benchmark), ~7.63e5 Monte Carlo replications,
+  master_seed 20260924 (+100000 per experiment).
+- Post-merge validation: see FINAL_POSTMERGE_QC.md and
+  qc/final_qc_report.md.
+- results/e*.csv + results/summary_*.csv (incl. e11_m1b.csv,
+  summary_e11.csv); figures/fig1-fig7 + manuscript/graphical_abstract.png;
+  tables/table1-table4.csv (+ .tex).
+- manuscript/main.md (placeholder-driven) -> manuscript/build/
+  manuscript_final.md + manuscript_final.docx + manuscript_inline.docx
+  (figures/tables inlined) + reference_map.json; values.json 101 keys.
+- Submission package (submission_package/ + ACTA_submission_package.zip):
+  both docx, cover_letter.md, highlights.md, declarations.md,
+  supplementary.md, ACTA_ASTRONAUTICA_GUIDE_AUDIT.md, references.bib
+  (18 verified references, Vancouver numbering in order of appearance),
+  fig1-fig7, table1-table4.
+- QC: qc/qc_report.md (PASS, 0 issues), qc/numerical_traceability.csv,
+  qc/reference_audit.csv, qc/reproducibility_report.md,
+  qc/internal_reviewer_pass.md, qc/hypothesis_status_final.csv (H1-H6,
+  H2 not_supported_baseline), qc/final_qc_report.md.
+- FINAL_USER_FIELDS_REQUIRED.txt -- the single consolidated file listing
+  every author-side field still needed before submission.
+- Data: ICRF3 K-band (824), ATNF pulsars (2818), Gaia DR3 bright (200)
+  in data/raw + data/processed with acquisition_ledger.csv (sha256).
+- handoffs/PHASE_00..20_HANDOFF.txt, this file.
+
+HEADLINE RESULTS (final revision)
+----------------
+- Quasar (ICRF-like) n=50: P(err<1 deg) = 1.0 at 1e7 yr; 0.0403 at 1e8.
+- Hybrid M7 (best tested heterogeneous): 0.9711 at 1e7 yr; 0.0138 at
+  1e8 -- i.e. the homogeneous quasar network OUTPERFORMED the tested
+  hybrid. H2 (heterogeneity advantage) is NOT supported under the
+  baseline scenario; long-horizon composition is governed by assumed
+  class stability/usability/geometry, not diversity per se.
+- Single landmark: a single source carrying only the source-north
+  relational scalar is insufficient for unique 3-D reconstruction
+  (p_invalid = 1.0) -- a property of the relational encoding. The M1b
+  direct-axis control (direction defines the axis) is algebraically
+  valid while the landmark survives but is capped near 0.5 by the
+  unresolved mirror ambiguity (no handedness channel) and collapses
+  under drift/loss (0.027 at 1e5 yr; invalid 0.9645 at 1e6; catalogue
+  substitution corrupts unbuffered: 0.239 at 1e4, p_mismatch=0.5).
+- Star-only networks collapse by ~1e6 yr (drift).
+- RANSAC-like: P<1deg = 0.91 at p_mismatch = 0.5 (LS ~0.004).
+- Chirality triples: removes mirror failure entirely (wrong-mirror
+  fraction 0.0 vs 0.49), P<1deg ~0.49 -> 0.97 at 1e7 yr.
+- Negative controls NC1/NC2 fail as required (P<1deg ~0).
+- Stored-edge identity check: helps substitution (0.8135->0.835), neutral
+  under injection (1.0->1.0), impossible under permutation (E6b/E6c).
+- Allocation frontier (E7): best baseline allocation at 1e7 yr is
+  quasar 20 only (P=1.0); quasars/galaxies dominate at long horizons.
+
+HOW TO REPRODUCE
+----------------
+  pip install -e .[dev]
+  make all          # tests -> simulate -> summarize -> figures ->
+                    # tables -> manuscript-results -> package -> qc
+Full simulation: ~50 min on 2 vCPU. Quick check: pytest tests.
+
+OPEN ITEMS FOR AUTHOR -- see FINAL_USER_FIELDS_REQUIRED.txt
+------------------------------------------------------------
+Every remaining author-side field is consolidated in that file
+(affiliation, contact, ORCID, funding, competing interests, CRediT,
+suggested reviewers, DOI). After filling, rebuild with
+`make manuscript-results && make package`.
+
+KNOWN LIMITATIONS (declared in manuscript)
+------------------------------------------
+- Usability/drift parameters are scenario assumptions (Weibull, drift
+  rates, 0.5 mirror prior), not fitted; sensitivity grids supplied
+  (E3, E4, Figures 5-7).
+- Synthetic populations; catalogue section is descriptive.
+- Mirror ambiguity modeled as O(3) reflection; chirality subset test.
+- M1b has no handedness channel: its ~0.5 success cap is the expected
+  mirror coin-flip, not estimator noise.

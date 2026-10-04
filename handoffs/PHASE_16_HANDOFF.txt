@@ -1,0 +1,8 @@
+PHASE 16 HANDOFF -- Acta Astronautica audit
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+ACTA_ASTRONAUTICA_GUIDE_AUDIT.md: numbered square-bracket refs in appearance order, self-contained abstract, <=6 keywords, highlights <=85 chars, graphical abstract, declarations (competing interests, AI use, data availability, CRediT).
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.
