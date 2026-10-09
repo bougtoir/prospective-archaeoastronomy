@@ -1,0 +1,19 @@
+parameter,value
+time grid (yr),"1e3, 1e4, 1e5, 1e6, 1e7, 1e8"
+N_MC default,2000
+N_MC core scenarios,10000
+sigma_obs baseline (rad),0.0001
+p_mismatch baseline,0.05
+mismatch model,permutation
+severity levels,pessimistic / baseline / optimistic
+estimators,"LS, Huber (IRLS), RANSAC"
+primary outcome,"P(eps_theta < 1 deg), Wilson 95% CI"
+master seed,20260924
+star drift (rad/yr),5e-7 (scenario assumption)
+pulsar drift (rad/yr),1e-7
+quasar drift (rad/yr),1e-9
+galaxy/cluster drift (rad/yr),2e-9
+usability tau star (yr),3e5
+usability tau pulsar (yr),3e6
+usability tau quasar (yr),3e8
+usability tau galaxy (yr),1e8
