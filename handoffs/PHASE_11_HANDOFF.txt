@@ -1,0 +1,8 @@
+PHASE 11 HANDOFF -- Monte Carlo engine
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+run_replication/run_scenario/run_grid in simulation.py; seeds = master_seed + 7919*replication_index. Full run ~7e5 replications across E1-E10.
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.
