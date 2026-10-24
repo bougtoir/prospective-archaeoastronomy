@@ -1,0 +1,8 @@
+PHASE 20 HANDOFF -- Submission package + sync
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+build_manuscript.py -> build/manuscript_final.md/.docx + reference_map.json; cover_letter, highlights, declarations, supplementary, FINAL_HANDOFF. Branch + PR to bougtoir/wip; sync-to-repos BRANCH_MAP/SUBDIR_MAP entry for public repo.
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.

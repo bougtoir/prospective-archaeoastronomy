@@ -1,0 +1,88 @@
+FINAL HANDOFF — Deep-Time Celestial Reference Networks (ASR submission)
+======================================================================
+Date (UTC):                2026-10-23
+Final target journal:      Advances in Space Research (Elsevier, ISSN 0273-1177)
+                           Editorial Manager: https://www.editorialmanager.com/AISR
+Canonical public repository: https://github.com/bougtoir/prospective-archaeoastronomy
+Canonical branch:          main
+Canonical commit:          b4b2cd52a1ef50ae4b5e9999dc0cd0f3b1978b7e
+Canonical reproduction:    python3 -m venv .venv && .venv/bin/pip install -e ".[dev]"
+                           make all PYTHON=.venv/bin/python
+                           (~57 min, 763,400 MC replications, master_seed 20260924)
+Clean-clone reproduction result: PASS (fresh clone of PUBLIC MAIN at the canonical
+                           commit; every artifact regenerated identical — see
+                           qc/FINAL_PUBLIC_END_TO_END_REPRODUCIBILITY_AUDIT.md)
+
+ASR-final implementation on public main: YES (synced via sync-to-repos from
+wip master merge of devin/1792708615-asr-retarget; includes post-#497
+quantization fixes, stored-edge decoder logic, M1b benchmark, corrected H2
+interpretation, OMML generation pipeline, ASR manuscript generation).
+Stale Acta wording in public-facing docs: removed (README targets ASR; the only
+remaining "Acta" strings are the Acta Futura journal citation and historical
+rejection-cause notes inside internal audit files).
+
+Provenance fix (latest):
+  public-main fresh clone:      PASS (make all at canonical commit, ~49 min, all outputs identical)
+  scientific results changed:   NO
+  manuscript content changed:   NO (except provenance/QC metadata)
+  canonical freeze:             b4b2cd52a1ef50ae4b5e9999dc0cd0f3b1978b7e is the frozen
+                                reproducibility commit (see qc/CANONICAL_FREEZE.md).
+                                The repository tip may later advance for metadata or
+                                unrelated maintenance; later commits do not change the
+                                canonical scientific version for this submission.
+
+QC STATUS (all PASS)
+--------------------
+ 1. Hostile adversarial review:              PASS
+ 2. Hardcode audit:                          PASS
+ 3. Public-main clean-clone reproducibility: PASS
+ 4. References exist / all cited:            PASS (18/18; ATNF DOI corrected)
+ 5. Citation completeness both directions:   PASS
+ 6. Figure/table citations:                  PASS (all cited, sequential order)
+ 7. Text/figure/table consistency:           PASS
+ 8. OMML structural audit:                   PASS (117 native Word equations)
+ 9. Final DOCX->PDF visual audit:            PASS (every page inspected)
+10. Residual LaTeX in visible text:          0
+11. Formatting asterisks (all submission-facing files): 0
+12. Manual character-count wrapping:         0
+13. Placeholders / TODO / TBD:               0
+14. Tracked changes / Word comments:         0
+15. Stale Acta target wording:               0
+16. Single-author cover-letter wording:      corrected (first-person singular)
+17. One canonical commit across QC files:    b4b2cd52a1ef50ae4b5e9999dc0cd0f3b1978b7e
+18. #497 quantization fixes retained:        YES
+19. M1b benchmark retained:                  YES
+
+FINAL SUBMISSION FILES (submission_package/ASR_submission_package.zip)
+--------------------------------------------------------------------
+manuscript_final.docx      — ASR submission manuscript (OMML equations)
+manuscript_inline.docx     — single-file review copy (figures+tables embedded)
+manuscript_final.pdf       — rendered PDF
+abstract.txt               — plain abstract for EM copy-paste
+cover_letter.md            — single-author ASR cover letter
+highlights.md              — 5 highlights (<=85 chars)
+graphical_abstract.png
+figures/fig1-7 .png
+tables/table1-4 .csv
+supplementary.md
+declarations.md            — competing interests / funding / CRediT / data-code availability / AI disclosure
+references.bib
+ASR_GUIDE_AUDIT.md
+qc/                        — QC evidence bundle (internal; bundle separately if not for upload)
+FINAL_USER_FIELDS_REQUIRED.txt — fields only the author can supply at EM
+FINAL_HANDOFF.txt
+
+Final ZIP filename: ASR_submission_package.zip
+
+AUTHOR-ONLY FIELDS (see FINAL_USER_FIELDS_REQUIRED.txt)
+-------------------------------------------------------
+3-6 suggested reviewers; corresponding-author phone; EM fields (ORCID/DOI);
+funding + CRediT confirmation; Elsevier declarations tool output (docx).
+
+LIMITATIONS (disclosed in manuscript)
+-------------------------------------
+Results are conditional on declared synthetic scenarios; usability/drift
+parameters are scenario assumptions, not measurements; H2 not supported under
+baseline; homogeneous quasar superiority conditional on class assumptions;
+M1b ~0.5 ceiling is benchmark-definition dependent (no independent
+sign/chirality bit); stored-edge benefits corruption-model-specific.

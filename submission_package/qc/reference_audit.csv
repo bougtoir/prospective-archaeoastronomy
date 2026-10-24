@@ -1,0 +1,19 @@
+bib_key,citation_order,doi,doi_verification,title_match,notes
+arias1995icrs,1,,n/a (no DOI registered; A&A 1995 ICRS paper, well-known),manual OK,book/journal ref
+charlot2020icrf3,2,10.1051/0004-6361/202038368,Crossref OK,OK,
+mignard2018gaiacrf2,3,10.1051/0004-6361/201832916,Crossref OK,OK,
+lindegren2018gaiadr2,4,10.1051/0004-6361/201832727,Crossref OK,OK,
+spratling2009starid,5,10.3390/a2010093,Crossref OK,OK,
+downs1974pulsar,6,,n/a (1974 NASA technical report),manual OK,
+sheikh2006xnav,7,10.2514/1.13331,Crossref OK,OK,
+becker2013pulsarnav,8,10.2420/AF07.2013.11,doi.org resolves to ESA Acta Futura PDF (not indexed in Crossref),OK,
+drake1972message,9,10.1126/science.175.4024.881,Crossref OK,OK,
+fedorov1972,10,,n/a (1972 monograph, Academic Press),manual OK,
+sagan1978murmurs,11,,n/a (1978 book, Random House),manual OK,
+huber1964robust,12,10.1214/aoms/1177703732,Crossref OK,OK,
+fischler1981ransac,13,10.1145/358669.358692,Crossref OK,OK,
+wilson1927,14,10.1080/01621459.1927.10502953,Crossref OK,OK,
+harris2020numpy,15,10.1038/s41586-020-2649-2,Crossref OK,OK,
+manchester2005atnf,16,10.1086/428488,Crossref OK (corrected from wrong 10.1071/AS04053),OK,defect found and fixed; regression test added
+gaiadr3,17,10.1051/0004-6361/202243940,Crossref OK,OK,
+cocconi1959searching,18,10.1038/184844a0,Crossref OK,OK,
