@@ -1,0 +1,8 @@
+PHASE 10 HANDOFF -- Estimators
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+LS (4x4 eigen), Huber IRLS c=1.345, RANSAC n_iter=120 tol=2deg. reconstruct() dispatcher; mirror-aware error path.
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.
