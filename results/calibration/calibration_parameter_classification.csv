@@ -1,0 +1,14 @@
+parameter,source_class,component,value_or_distribution,classification,basis,sensitivity_handling
+per-source drift rate,star,stability,measured |PM|,observed,"Gaia DR3 pmra/pmdec, quality-cut sample",n/a
+per-source drift rate,pulsar,stability,measured PMTOT subset,observed,ATNF measured PMs; PM-missing excluded from primary,PM-missing resampled from empirical CDF (S1)
+per-source drift rate,quasar,stability,log-uniform 1e-3..1e-1 mas/yr,literature-constrained,ICRF3 uncertainties + Gaia quasar-frame literature; AGN structure centroid wander,scale x0.1/x10 (S4)
+exists(t),star,exists,exp(-t/5e9 yr),literature-constrained,main-sequence lifetime scale,tau 5e8..2e10 yr (S2)
+exists(t),pulsar,exists,"exp(-t/(k*median AGE)), k=1",derived,ATNF characteristic-age distribution sets the scale; age is NOT used as exact remaining lifetime,k=0.3/3 (S3)
+exists(t),quasar,exists,1.0,sensitivity-only,"current existence is observed; continued persistence over modelled horizons is a conditional assumption, not observed; quasar results are conditional on source persistence and the specified apparent-motion model",declared baseline
+identifiable(t),all,identifiable,1.0,sensitivity-only,"uniqueness loss is dominated by drift (in propagation), so no separate factor is fitted",declared baseline
+observable(t),all,observable,1.0,sensitivity-only,instrument availability not catalogue-estimable,declared baseline
+galaxy drift/usability,galaxy,all,not calibrated,sensitivity-only,"no credible public calibration path (resolved sizes vary, no stable point reference)",removed from primary; synthetic layer only
+galaxy_cluster drift/usability,galaxy_cluster,all,not calibrated,sensitivity-only,extended sources; centroid definition unstable,removed from primary; synthetic layer only
+p_mismatch,all,corruption model,0.05 baseline,extrapolated,declared scenario parameter (not astrophysical),swept 0..0.5 in E2/E3
+sigma_obs,all,corruption model,1e-4 rad,extrapolated,declared observational-noise scenario,swept 1e-6..1e-2 in E4
+storage bits,all,encoding,32,extrapolated,encoding design choice,swept 8..64 in E6

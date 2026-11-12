@@ -1,0 +1,93 @@
+token,value,source,generating_script,status
+best_alloc_p1_t1e+07,1.0,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+best_alloc_t1e+07,star 0 + pulsar 0 + quasar 20 + galaxy 0,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+c_hybrid50_p1_t1e+06,0.9575,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_hybrid50_p1_t1e+07,0.9965,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_hybrid50_p1_t1e+08,0.969,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_pulsar50_opt_p1_t1e+05,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_pulsar50_p1_t1e+05,0.9975,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_pulsar50_p1_t1e+06,0.5435,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_quasar50_med_t1e+06,0.0029,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_quasar50_opt_p1_t1e+05,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_quasar50_p1_t1e+05,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_quasar50_p1_t1e+06,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_quasar50_p1_t1e+07,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_quasar50_p1_t1e+08,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_star50_opt_p1_t1e+05,0.973,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_star50_p1_t1e+05,0.9725,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_star50_p1_t1e+06,0.1225,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+c_star50_p1_t1e+07,0.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+cal_n_atnf,3470,data/processed catalogues (Gaia/ATNF/ICRF3),scripts/manuscript_values.py,ok
+cal_n_atnf_pm_meas,629,data/processed catalogues (Gaia/ATNF/ICRF3),scripts/manuscript_values.py,ok
+cal_n_gaia,2400,data/processed catalogues (Gaia/ATNF/ICRF3),scripts/manuscript_values.py,ok
+cal_n_icrf3,824,data/processed catalogues (Gaia/ATNF/ICRF3),scripts/manuscript_values.py,ok
+cal_n_icrf3_defining,193,data/processed catalogues (Gaia/ATNF/ICRF3),scripts/manuscript_values.py,ok
+cal_psr_med_pm,8.9,data/processed catalogues (Gaia/ATNF/ICRF3),scripts/manuscript_values.py,ok
+cal_psr_median_age,8900000.0,data/processed catalogues (Gaia/ATNF/ICRF3),scripts/manuscript_values.py,ok
+cal_psr_p90_pm,45.0,data/processed catalogues (Gaia/ATNF/ICRF3),scripts/manuscript_values.py,ok
+cal_star_med_pm,37.42,data/processed catalogues (Gaia/ATNF/ICRF3),scripts/manuscript_values.py,ok
+cal_star_p90_pm,156.64,data/processed catalogues (Gaia/ATNF/ICRF3),scripts/manuscript_values.py,ok
+cest_huber_pm0.5_t1e+06,0.016,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+cest_ls_pm0.5_t1e+06,0.002,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+cest_ransac_pm0.5_t1e+06,0.581,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+chir_off_p1,0.4975,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+chir_off_pmirror_wrong,0.4955,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+chir_on_p1,0.973,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+chir_on_pmirror_wrong,0.0,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+cprec_q50_32b_med_t1e+04,0.0016,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+cprec_q50_32b_t1e+04,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+cprec_q50_8b_med_t1e+04,0.0394,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+cprec_q50_8b_t1e+04,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+edge_bchir_substitution_p1,0.8135,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+edge_knnchir_substitution_p1,0.835,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+hybrid_huber_pm0.0,0.9995,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+hybrid_huber_pm0.5,0.108,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+hybrid_ls_pm0.0,0.5885,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+hybrid_ls_pm0.5,0.0045,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+hybrid_p1_t1e7_worst,0.719,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+hybrid_ransac_pm0.0,0.998,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+hybrid_ransac_pm0.5,0.9135,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+m1b_p1_t1e+03,0.5045,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+m1b_p1_t1e+04,0.483,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+m1b_p1_t1e+05,0.0265,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+m1b_p_invalid_t1e+06,0.966,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+miss_atnf_age_yr,0.257,results/calibration/missingness_report.csv,scripts/manuscript_values.py,ok
+miss_atnf_p1_ss,0.241,results/calibration/missingness_report.csv,scripts/manuscript_values.py,ok
+miss_atnf_pm_tot_masyr,0.819,results/calibration/missingness_report.csv,scripts/manuscript_values.py,ok
+miss_gaia_radial_velocity_kms,0.214,results/calibration/missingness_report.csv,scripts/manuscript_values.py,ok
+nc1_p1,0.0,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+nc2_p1,0.0035,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+prec_bchir_32b_median_err,0.0016,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+prec_bchir_8b_median_err,0.04055,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+prop_diff_deg_t1e+03,0.0,results/calibration/propagation_comparison.csv,scripts/manuscript_values.py,ok
+prop_diff_deg_t1e+05,0.0123,results/calibration/propagation_comparison.csv,scripts/manuscript_values.py,ok
+prop_diff_deg_t1e+06,1.2183,results/calibration/propagation_comparison.csv,scripts/manuscript_values.py,ok
+quasar_100_p1_t1e4,1.0,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+quasar_10_p1_t1e4,1.0,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+quasar_50_p1_t1e4,1.0,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+quasars50_p1_t1e+07,1.0,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+s_hybrid_spq_p1_t1e+06,0.7845,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+s_pulsar50_p1_t1e+06,0.052,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+s_quasar50_p1_t1e+06,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+s_star50_p1_t1e+06,0.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+sens1_pulsar50_missingpm_resampled_p1_t1e+06,0.517,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+sens2_star50_tau2e+10_p1_t1e+06,0.14,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+sens2_star50_tau5e+08_p1_t1e+06,0.116,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+sens3_pulsar50_k0p3_p1_t1e+06,0.482,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+sens3_pulsar50_k3p0_p1_t1e+06,0.556,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+sens4_quasar50_driftx0p1_p1_t1e+07,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+sens4_quasar50_driftx10p0_p1_t1e+07,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+sens5_star50_strict_p1_t1e+05,0.958,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+sens5_star50_strict_p1_t1e+06,0.11,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+sens6_quasar50_defining_p1_t1e+06,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+sens6_quasar50_defining_p1_t1e+08,1.0,results/calibration/calibrated_summary.csv,scripts/manuscript_values.py,ok
+single_star_p_invalid_mean,1.0,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+stars50_p1_t1e+07,0.0,results/summary_e*.csv (synthetic layer),scripts/manuscript_values.py,ok
+tvc_a,CONFIRMED,results/calibration/theory_vs_calibrated_findings.csv,scripts/manuscript_values.py,ok
+tvc_b,CONFIRMED,results/calibration/theory_vs_calibrated_findings.csv,scripts/manuscript_values.py,ok
+tvc_c,CONFIRMED,results/calibration/theory_vs_calibrated_findings.csv,scripts/manuscript_values.py,ok
+tvc_d,CONFIRMED,results/calibration/theory_vs_calibrated_findings.csv,scripts/manuscript_values.py,ok
+tvc_e,PARTIALLY CONFIRMED,results/calibration/theory_vs_calibrated_findings.csv,scripts/manuscript_values.py,ok
+tvc_f,CONFIRMED,results/calibration/theory_vs_calibrated_findings.csv,scripts/manuscript_values.py,ok
+tvc_g,PARTIALLY CONFIRMED,results/calibration/theory_vs_calibrated_findings.csv,scripts/manuscript_values.py,ok
+tvc_h,CONFIRMED,results/calibration/theory_vs_calibrated_findings.csv,scripts/manuscript_values.py,ok

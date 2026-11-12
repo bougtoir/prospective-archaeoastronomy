@@ -1,0 +1,138 @@
+FINAL HANDOFF — Deep-Time Celestial Reference Networks (SMPT submission)
+======================================================================
+Final target journal:       Simulation Modelling Practice and Theory (Elsevier)
+                            Editorial Manager: https://www.editorialmanager.com/SIMPAT
+Canonical public repository: https://github.com/bougtoir/prospective-archaeoastronomy
+Canonical branch:           main
+Historical ASR scientific commit:  b4b2cd52a1ef50ae4b5e9999dc0cd0f3b1978b7e
+SMPT scientific canonical commit:  f1dd191bb34ea89c172239206bfb09532861c8e4
+                                   (full clean-clone `make all` verified)
+Final submission/package commit:   b20b61480d6f0e8c049aa6b169a993ef31a02d0a
+Current public-main tip:           b20b61480d6f0e8c049aa6b169a993ef31a02d0a
+                                   (provenance-bookkeeping commits may
+                                   advance it later; docs only)
+The scientific and package commits differ deliberately: the tree diff
+f1dd191bb3..package-tip changes only wording/labels/filenames/QC/package
+files; no scientific code, config, input data, simulation output, number,
+figure curve or table value changed (see qc/CANONICAL_FREEZE.md).
+Scientific outputs were clean-clone reproduced at the scientific canonical
+commit; subsequent package/QC commits do not modify scientific dependencies.
+Canonical reproduction:     python3 -m venv .venv && .venv/bin/pip install -e ".[dev]"
+                            make all PYTHON=.venv/bin/python
+                            (synthetic + calibrated + sensitivity; master_seed 20260924)
+
+TITLE
+  Observation-Calibrated Celestial Reference Networks for Long-Horizon
+  Orientation Reconstruction
+
+REVISION SCOPE (ASR desk-reject -> SMPT)
+  Three-layer design answering the ASR criticism that key results depended on
+  ad-hoc synthetic scenario parameters without observation-calibrated
+  astrophysical grounding:
+    LAYER 1 — general synthetic parameter-space theory (declared, swept).
+    LAYER 2 — observation-calibrated validation on real source populations.
+    LAYER 3 — far-horizon extrapolative stress tests (not forecasts).
+
+CALIBRATION DATA (status: all fetched, persisted in data/raw + ledger)
+  Gaia DR3 bright-star sample:    n = 2400 (G<12, parallax>0.1, ruwe<1.4,
+                                  visibility>8; RV missing fraction 0.214)
+  ATNF pulsar catalogue v1.x:     n = 3470 (629 measured PMTOT; PMTOT missing
+                                  0.819; age missing 0.257)
+  ICRF3 quasar catalogue:         n = 824 (with defining-source flag)
+  Arbitrary drift constants replaced by measured proper motions / timing models;
+  arbitrary usability demoted to a parameterized, sensitivity-tested model.
+
+TIME-HORIZON TAXONOMY (used consistently across text/figures/tables)
+  A. Observation-anchored primary:      1e3 / 1e4 / 1e5 yr
+  B. Extended physically constrained projection: 1e6 yr (indirect validation,
+     larger uncertainty — explicitly described as such)
+  C. Extrapolative stress tests:        1e7 / 1e8 yr (NOT forecasts; outside the
+     directly defensible observational domain)
+
+FROZEN vs NEW ANALYSES (scientific freeze rule)
+  Inherited frozen analyses (unchanged scientific inputs, not re-derived):
+    synthetic grid E1–E11 (architecture, geometry, chirality, quantization,
+    stored-edge, negative controls, robust estimators, info-cost, response
+    surfaces), calibration catalogues as persisted snapshots.
+  Newly executed calibration analyses:
+    source-motion calibration, usability classification, calibrated scenarios
+    C_* (352,000 reps), sensitivity branches S1–S6 (25,000 reps), propagation
+    comparison, theory-vs-calibrated verdicts.
+  Targeted reruns triggered by changed dependencies:
+    horizon-regime relabelling (three-tier taxonomy), S5 Gaia strict-quality
+    and S6 ICRF3 defining-only branches, downstream tables/figures/values.
+  Not rerun: all other frozen synthetic results — inputs unchanged.
+
+FINDINGS — THEORY vs CALIBRATED VERDICTS
+  A CONFIRMED, B CONFIRMED, C CONFIRMED, D CONFIRMED, E PARTIALLY CONFIRMED,
+  F CONFIRMED, G PARTIALLY CONFIRMED, H CONFIRMED.
+  No finding reversed; none untestable.
+  Claim calibration: 1e7–1e8 results are reported only as "the framework
+  remains recoverable under specified extrapolative stress-test assumptions" —
+  never as validated forecasts or measurements.
+
+TARGETED PASS (post-canonical corrections)
+  Figure files 10-14 renamed so filename = caption = content;
+  table files 3-6 likewise. Manchester 2005 corrected to AJ 129(4)
+  1993-2006 DOI 10.1086/428488. Fedorov moved to D-optimal Methods.
+  Highlights: 5 bullets, <=85 chars. Quasar persistence reclassified
+  observed -> sensitivity-only (conditional assumption). Resampling
+  wording corrected to repeated population resampling. Supplementary
+  material: NONE (content redistributed to main text + REPRODUCIBILITY.md).
+  No 10^9-yr mention remains.
+
+FINISHING PASS (targeted QC/provenance corrections, no science rerun)
+  Figure 13 legend relabelled: simulated performance no longer tagged
+  "(observed)" — labels are now "observation-calibrated star50/pulsar50/
+  quasar50" and "synthetic star50/pulsar50/quasar50"; curves unchanged
+  (same frozen CSV, deterministic regeneration). SMPT guide audit now
+  uses JCR as the primary quartile basis (JIF 4.6; Q1 in COMPUTER
+  SCIENCE, SOFTWARE ENGINEERING; Q2 in COMPUTER SCIENCE, INTERDISCIPLINARY
+  APPLICATIONS). Scientific-vs-package canonical distinction recorded.
+  Analyses intentionally NOT rerun: synthetic grids E1-E11, calibrated
+  Monte Carlo, S1-S6, geometry/chirality/estimator/quantization/
+  stored-edge/negative-control/info-cost experiments — no upstream
+  scientific dependency changed.
+
+QC GATES — ALL PASS on the regenerated package (see qc/FINAL_SMPT_SUBMISSION_QC.md)
+  Model validation report:              PASS (qc/MODEL_VALIDATION_REPORT.md)
+  ASR criticism response audit:         PASS (qc/ASR_CRITICISM_RESPONSE_AUDIT.md)
+  Hostile/adversarial review:           PASS (qc/SMPT_HOSTILE_REVIEW.md)
+  Final decision:                       PASS (qc/SMPT_FINAL_DECISION.md)
+  Hardcode audit:                       PASS — 0 unmapped numbers (HARDCODE_AUDIT.md,
+                                        NUMERIC_PROVENANCE_AUDIT.csv, 407 values.json keys)
+  Reference audit:                      PASS — 23 refs exist & cited (reference_audit.csv,
+                                        FINAL_REFERENCE_AND_CITATION_AUDIT.md)
+  Figure/table citation audit:          PASS (FINAL_FIGURE_TABLE_CITATION_AUDIT.md)
+  Text/figure/table consistency:        PASS (FINAL_TEXT_FIGURE_TABLE_CONSISTENCY_AUDIT.md)
+  Numerical consistency:                PASS — values regenerated from outputs
+  OMML structural audit:                PASS — 154 objects, LaTeX residue = 0
+                                        (OMML_STRUCTURAL_AUDIT.md, OMML_EQUATION_INVENTORY.csv)
+  Visual render audit (all 17 pages):   PASS (FINAL_VISUAL_RENDER_AUDIT.md)
+  Asterisk formatting:                  PASS — 0 stray formatting asterisks
+  Line wrap audit:                      PASS — 0 manual hard-wraps
+  Tracked changes / placeholders:       0
+  pytest:                               16/16 PASS
+  Public clean-clone reproduction:      PASS at scientific canonical
+                                        f1dd191bb3; package-tip verified
+                                        downstream-identical
+                                        (FINAL_PUBLIC_END_TO_END_REPRODUCIBILITY_AUDIT.md)
+
+FINAL SUBMISSION FILE LIST (submission_package/SMPT_submission_package.zip)
+  manuscript_final.docx        — OMML-native equations, submission manuscript
+  manuscript_inline.docx       — manuscript with figures/tables inline (review)
+  manuscript_final.pdf         — rendered PDF for visual audit/reference
+  cover_letter.md              — SMPT cover letter (first person singular)
+  highlights.md                — Elsevier highlights
+  graphical_abstract.png
+  abstract.txt
+  declarations.md              — declarations, data & code availability, AI use
+  references.bib
+  figures/fig1–fig14 (14 PNG files, separate files per submission rules)
+  tables/table1–table9 (9 CSV files)
+  qc/ — all QC audit files listed above
+  FINAL_HANDOFF.txt            — this file
+  FINAL_USER_FIELDS_REQUIRED.txt — fields only the author can fill (reviewer
+                                  suggestions, contact details, funding)
+
+Submission package: submission_package/SMPT_submission_package.zip

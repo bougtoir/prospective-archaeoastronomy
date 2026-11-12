@@ -1,0 +1,8 @@
+PHASE 08 HANDOFF -- Degradation model
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+Weibull usability p=exp(-(t/tau)^a): star tau=3e5 a=1, pulsar 3e6 a=1, quasar 3e8 a=0.7, galaxy/cluster 1e8 a=0.7. Severity multipliers pessimistic 0.3 / base 1 / optimistic 3. Class drift rates rad/yr in simulation.py.
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.

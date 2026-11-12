@@ -1,0 +1,36 @@
+FINAL_USER_FIELDS_REQUIRED.txt
+================================
+Author metadata resolved from repository records:
+
+  Tatsuki Onishi (corresponding author)
+  Data Science and AI Innovation Research Promotion Center,
+  Shiga University, 1-1-1 Bamba, Hikone, Shiga 522-8522, Japan
+  E-mail: bougtoir@gmail.com
+  ORCID: 0000-0001-7261-9062
+
+These values are written directly into the manuscript title block,
+cover letter, and declarations. No scattered placeholders remain.
+
+Remaining genuinely unresolved items (OPTIONAL — none block submission):
+
+1. Suggested reviewers
+   Simulation Modelling Practice and Theory (Elsevier) invites potential
+   reviewer suggestions in the Editorial Manager form at submission time.
+   ACTION (optional): supply names/affiliations/emails in the submission
+   system. No placeholder remains in the manuscript.
+
+2. Corresponding-author telephone / address details
+   Editorial Manager asks for full postal and phone details of the
+   corresponding author.
+   ACTION (optional): add a phone number in the submission system if desired.
+
+3. Archival DOI (optional)
+   No Zenodo/DOI archive exists. The public repository
+   (github.com/bougtoir/prospective-archaeoastronomy) is the public record;
+   the canonical commit hash is recorded in qc/CANONICAL_FREEZE.md.
+   ACTION (optional): mint a Zenodo DOI and add it to the paper's
+   code-availability line.
+
+4. Funding statement
+   Manuscript declares no specific funding. If a grant applies, update
+   declarations.md and the title page before submission.

@@ -1,0 +1,15 @@
+catalogue,column,n_total,n_missing,frac_missing
+gaia_dr3_bright,pmra_masyr,2400,0,0.0
+gaia_dr3_bright,pmdec_masyr,2400,0,0.0
+gaia_dr3_bright,parallax_mas,2400,0,0.0
+gaia_dr3_bright,radial_velocity_kms,2400,514,0.21416666666666667
+gaia_dr3_bright,ruwe,2400,0,0.0
+atnf_pulsars,p0_s,3470,57,0.016426512968299712
+atnf_pulsars,p1_ss,3470,836,0.24092219020172911
+atnf_pulsars,pm_tot_masyr,3470,2841,0.8187319884726225
+atnf_pulsars,age_yr,3470,892,0.2570605187319885
+atnf_pulsars,dist_kpc,3470,75,0.021613832853025938
+atnf_pulsars,dist1_kpc,3470,75,0.021613832853025938
+icrf3_quasars,dec_unc_arcsec,824,0,0.0
+icrf3_quasars,ra_unc_s,824,0,0.0
+icrf3_quasars,n_sessions,824,0,0.0

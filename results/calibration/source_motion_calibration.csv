@@ -1,0 +1,4 @@
+source_class,n,median_masyr,q25_masyr,q75_masyr,p90_masyr,max_masyr,source
+star,2400,37.42011979264716,17.44378187494841,83.04966283581413,156.63957541583494,5282.104166617755,Gaia DR3 bright sample (measured)
+pulsar,629,8.926,5.605,20.4,45.0018,373.93,ATNF PMTOT measured subset (n_missing=2841 excluded)
+quasar_prior_masyr,1000,0.010000026562600928,0.0031622839552042604,0.031622839648846074,0.06309579485776491,0.1,log-uniform literature prior 1e-3..1e-1 mas/yr
