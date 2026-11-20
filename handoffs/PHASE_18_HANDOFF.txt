@@ -1,0 +1,8 @@
+PHASE 18 HANDOFF -- QC + traceability
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+qc_audit.py: placeholder coverage, figure/table citations -> qc/numerical_traceability.csv + qc_report.md. reference_audit.csv generated.
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.

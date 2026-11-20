@@ -1,0 +1,8 @@
+PHASE 14 HANDOFF -- Literature audit
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+references.bib: 16 verified-real entries (ICRF3 Charlot 2020, Gaia DR3/DR2, pulsars Sheffield/XNAV, RANSAC Fischler-Bolles, Huber, Wilson, Drake/Cocconi/Sagan SETI, Spratling star-ID DOI 10.3390/a2010093). Unverifiable candidates removed.
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.

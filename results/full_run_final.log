@@ -1,0 +1,38 @@
+python3 -m pytest tests -x -q
+............                                                             [100%]
+12 passed in 1.27s
+python3 scripts/run_simulations.py
+E1 done: 228000 reps
+E1c done: 180000 reps
+E2 done: 72000 reps
+E3 done: 42000 reps
+E4 done: 12000 reps
+E5 done: 16000 reps
+E6 done: 96000 reps
+E6b done: 36000 reps
+E6c done: 16000 reps
+E7 done: 77400 reps
+E8 done: 4000 reps
+E9 done: 4000 reps
+E10 done: 24000 reps
+E11 done: 18000 reps
+python3 scripts/summarize_results.py
+/home/ubuntu/repos/wip/prospective-archaeoastronomy/scripts/summarize_results.py:16: DtypeWarning: Columns (6) have mixed types. Specify dtype option on import or set low_memory=False.
+  return pd.read_csv(RES / name)
+/home/ubuntu/repos/wip/prospective-archaeoastronomy/scripts/summarize_results.py:16: DtypeWarning: Columns (6) have mixed types. Specify dtype option on import or set low_memory=False.
+  return pd.read_csv(RES / name)
+summaries written
+python3 scripts/make_figures.py
+figures written to /home/ubuntu/repos/wip/prospective-archaeoastronomy/figures
+python3 scripts/make_tables.py
+tables written
+python3 scripts/manuscript_values.py
+101 values -> /home/ubuntu/repos/wip/prospective-archaeoastronomy/manuscript/values.json
+python3 scripts/build_manuscript.py
+built manuscript: 18 references
+python3 scripts/build_docx_inline.py
+/home/ubuntu/repos/wip/prospective-archaeoastronomy/manuscript/build/manuscript_inline.docx
+python3 scripts/make_submission_package.py
+/home/ubuntu/repos/wip/prospective-archaeoastronomy/submission_package/ACTA_submission_package.zip
+python3 scripts/qc_audit.py
+PASS 0 issues

@@ -1,0 +1,25 @@
+sky-tiling source_id ranges x TOP100 brightest, G<12 parallax>0.1 ruwe<1.4 vis>8
+gaia_slice_00.csv
+gaia_slice_01.csv
+gaia_slice_02.csv
+gaia_slice_03.csv
+gaia_slice_04.csv
+gaia_slice_05.csv
+gaia_slice_06.csv
+gaia_slice_07.csv
+gaia_slice_08.csv
+gaia_slice_09.csv
+gaia_slice_10.csv
+gaia_slice_11.csv
+gaia_slice_12.csv
+gaia_slice_13.csv
+gaia_slice_14.csv
+gaia_slice_15.csv
+gaia_slice_16.csv
+gaia_slice_17.csv
+gaia_slice_18.csv
+gaia_slice_19.csv
+gaia_slice_20.csv
+gaia_slice_21.csv
+gaia_slice_22.csv
+gaia_slice_23.csv

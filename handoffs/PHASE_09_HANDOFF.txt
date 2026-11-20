@@ -1,0 +1,8 @@
+PHASE 09 HANDOFF -- Misidentification + mirror
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+Mismatch models permutation/substitution/injection at p_mismatch. Mirror ambiguity: O(3) frame recovered up to reflection; sparse chirality triples (sign of triple products) detect mirror.
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.

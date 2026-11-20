@@ -1,0 +1,8 @@
+PHASE 13 HANDOFF -- Figures and tables
+project: prospective-archaeoastronomy / Deep-Time Celestial Reference Networks
+date: 2026-09-24 06:06 UTC
+status: complete
+
+make_figures.py -> figures/fig1-fig7 + manuscript/graphical_abstract.png; make_tables.py -> manuscript/table1-4 csv; all driven by results/*.csv.
+
+Artifacts: see README.md, Makefile targets, results/, figures/, manuscript/, qc/.

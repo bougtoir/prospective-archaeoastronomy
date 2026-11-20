@@ -1,0 +1,9 @@
+parameter,synthetic_assumption,calibrated_treatment
+star drift,5e-7 rad/yr fixed,measured Gaia |PM| per source (observed)
+pulsar drift,1e-7 rad/yr fixed,"measured ATNF PMTOT; missing reported, resampled only in sensitivity S1 (observed)"
+quasar drift,1e-9 rad/yr fixed,log-uniform 1e-3..1e-1 mas/yr prior; ICRF3 uncertainties + literature (literature-constrained)
+star usability,Weibull tau=3e5 yr,"exists exp(-t/5e9 yr) literature tau, sensitivity 5e8..2e10"
+pulsar usability,Weibull tau=3e6 yr,"exists exp(-t/(k*median AGE)), ATNF-derived scale, k in 0.3..3 (derived)"
+quasar usability,Weibull tau=3e8 yr,exists = 1 (conditional persistence assumption)
+galaxy/cluster,"2e-9 rad/yr, tau=1e8 yr",not credibly calibratable: removed from primary (sensitivity-only)
+sky geometry,isotropic on sphere,"actual catalogue sky positions (observed, anisotropic for ICRF3)"

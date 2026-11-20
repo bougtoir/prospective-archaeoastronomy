@@ -1,0 +1,17 @@
+{
+  "icrf3": {
+    "status": "ok",
+    "n": 824,
+    "file": "data/processed/icrf3_quasars.csv"
+  },
+  "atnf": {
+    "status": "ok",
+    "n": 3470,
+    "file": "data/processed/atnf_pulsars.csv"
+  },
+  "gaia_dr3_bright": {
+    "status": "ok",
+    "n": 2400,
+    "file": "data/processed/gaia_dr3_bright.csv"
+  }
+}
